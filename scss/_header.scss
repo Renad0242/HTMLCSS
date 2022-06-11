@@ -1,0 +1,28 @@
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 24px 0;
+     font-family: $font-f-NS;
+     @media(max-width: 375px){
+         padding: 0 4px;
+     }
+     h1{
+        width: 20.04%;
+        @media(max-width: 375px){
+             width: 34.89%;
+         }  
+     }
+}
+.header-link{
+    color: $link-color;
+    background: #FF5D50;
+    border-radius: 22px;
+    padding: 8px 32px;
+    @media(max-width: 375px){
+         margin: 16px 0;
+    }  
+     &:hover{
+        background: #F6CB52;
+        }     
+}

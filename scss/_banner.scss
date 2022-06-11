@@ -1,0 +1,54 @@
+.banner{
+     margin-top: 30px;
+     display: flex;
+     @media(max-width: 375px){
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+         background-position: bottom;
+         background-repeat: no-repeat;
+         padding: 0 4px;
+         flex-direction: column;
+         margin-top: 32px;
+     }
+     &-content{
+         font-family: $font-f-NS;
+         width: 51%;
+         @media(max-width: 375px){
+            width: 100%;
+         }   
+     }
+     &-home{
+        display: block;
+        width: 49%;
+         @media(max-width: 375px){
+         width: 100%;
+         }   
+    } 
+     &-content{
+         span{
+             display: block;
+             font-size: $font-s-s;
+             color: #56C4C5;
+             margin-top: 158px;
+             @media(max-width: 375px){
+                 font-size: 16px;
+                 margin-top: 0;
+             }
+         }
+         .banner-ad{
+             font-size: 48px;
+             font-weight:$font-w-l;
+             margin-top: 8px;
+             margin-bottom: 16px;
+             @media(max-width: 375px){
+                 font-size: $font-s-larger;
+            }
+         }   
+         p{
+             font-size: $font-s-m;
+             font-weight: normal;
+             @media(max-width: 375px){
+                font-size: 16px;
+            }
+         }
+     }         
+}

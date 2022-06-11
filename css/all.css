@@ -1,0 +1,639 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*{
+    outline: 0.5px dotted red;
+}*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+  line-height: 1.5;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #221E1F;
+  font-weight: bold;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+@media (max-width: 375px) {
+  body {
+    background-image: none;
+  }
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h3, h4 {
+  text-align: center;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 375px) {
+  header {
+    padding: 0 4px;
+  }
+}
+header h1 {
+  width: 20.04%;
+}
+@media (max-width: 375px) {
+  header h1 {
+    width: 34.89%;
+  }
+}
+
+.header-link {
+  color: #FFFFFF;
+  background: #FF5D50;
+  border-radius: 22px;
+  padding: 8px 32px;
+}
+@media (max-width: 375px) {
+  .header-link {
+    margin: 16px 0;
+  }
+}
+.header-link:hover {
+  background: #F6CB52;
+}
+
+.banner {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 375px) {
+  .banner {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 0 4px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 32px;
+  }
+}
+.banner-content {
+  font-family: "Noto Sans TC", sans-serif;
+  width: 51%;
+}
+@media (max-width: 375px) {
+  .banner-content {
+    width: 100%;
+  }
+}
+.banner-home {
+  display: block;
+  width: 49%;
+}
+@media (max-width: 375px) {
+  .banner-home {
+    width: 100%;
+  }
+}
+.banner-content span {
+  display: block;
+  font-size: 18px;
+  color: #56C4C5;
+  margin-top: 158px;
+}
+@media (max-width: 375px) {
+  .banner-content span {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}
+.banner-content .banner-ad {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .banner-content .banner-ad {
+    font-size: 32px;
+  }
+}
+.banner-content p {
+  font-size: 20px;
+  font-weight: normal;
+}
+@media (max-width: 375px) {
+  .banner-content p {
+    font-size: 16px;
+  }
+}
+
+.platform {
+  background-repeat: no-repeat;
+}
+.platform h3 {
+  margin-top: 217px;
+  margin-bottom: 48px;
+}
+@media (max-width: 375px) {
+  .platform h3 {
+    margin-top: 98.5px;
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+}
+.platform h4 {
+  margin: 24px 0;
+}
+@media (max-width: 375px) {
+  .platform h4 {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+}
+.platform ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .platform ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.platform ul li {
+  width: 33.33%;
+}
+@media (max-width: 375px) {
+  .platform ul li {
+    width: 100%;
+  }
+}
+.platform ul .platform-logo {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+}
+@media (max-width: 375px) {
+  .platform ul .platform-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+.platform ul p {
+  font-weight: normal;
+  color: #747474;
+  text-align: center;
+  padding: 0 8px 24px;
+}
+
+.roles {
+  margin-bottom: 100px;
+  text-align: center;
+}
+@media (max-width: 375px) {
+  .roles {
+    padding: 0 4px;
+  }
+}
+.roles h3 {
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .roles h3 {
+    margin-top: 36px;
+    margin-bottom: 16px;
+    font-size: 28px;
+  }
+}
+.roles-p {
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 48px;
+}
+@media (max-width: 375px) {
+  .roles-p {
+    font-size: 18px;
+    padding-bottom: 32px;
+  }
+}
+.roles-picture {
+  border-radius: 12px 12px 0 0;
+}
+.roles ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 375px) {
+  .roles ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 38px;
+    margin-right: 37px;
+    gap: 24px;
+  }
+}
+.roles ul li {
+  width: 25%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+}
+@media (max-width: 375px) {
+  .roles ul li {
+    width: 100%;
+  }
+}
+.roles ul span {
+  display: block;
+  color: #56C4C5;
+  padding: 16px 0 16px;
+}
+.roles ul p {
+  font-weight: normal;
+  padding: 0 16px 24px;
+}
+
+.plan {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
+  background-position: 110% -50%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 375px) {
+  .plan {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.plan-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 55%;
+}
+@media (max-width: 375px) {
+  .plan-box {
+    width: 100%;
+    padding-left: 53px;
+  }
+}
+.plan-box h5 {
+  padding-bottom: 16px;
+}
+.plan-box p {
+  font-weight: normal;
+}
+.plan-box li {
+  width: 230px;
+  margin-right: 47px;
+  margin-bottom: 28px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  padding: 32px 32px 48px 32px;
+}
+.plan-box li .top {
+  padding: 17px;
+}
+.plan-box li .down {
+  padding: 19px 17px;
+}
+.plan-content {
+  width: 45%;
+}
+@media (max-width: 375px) {
+  .plan-content {
+    width: 100%;
+  }
+}
+.plan-content h3 {
+  text-align: left;
+  padding-bottom: 16px;
+}
+@media (max-width: 375px) {
+  .plan-content h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+}
+.plan-content p {
+  font-weight: normal;
+  padding-bottom: 24px;
+}
+@media (max-width: 375px) {
+  .plan-content p {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+}
+.plan-content a {
+  display: block;
+  color: #FFFFFF;
+  background: #56C4C5;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  padding: 12px 32px;
+}
+.plan-content a:hover {
+  background: #F6CB52;
+  border: 1px solid #F6CB52;
+}
+.plan-circle {
+  width: 86px;
+  height: 86px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+}
+
+.plan-link {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  width: 136px;
+  margin-bottom: 100px;
+}
+@media (max-width: 375px) {
+  .plan-link {
+    margin-left: 100px;
+    margin-bottom: 32px;
+  }
+}
+
+.comment {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg");
+  background-position: -10% 15%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 375px) {
+  .comment {
+    background-position: -45% top;
+    padding: 0 4px;
+  }
+}
+.comment h3 {
+  padding-bottom: 104px;
+}
+@media (max-width: 375px) {
+  .comment h3 {
+    padding-bottom: 98px;
+    font-size: 28px;
+  }
+}
+.comment ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 134px;
+}
+@media (max-width: 375px) {
+  .comment ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+.comment ul li {
+  width: 32.35%;
+  padding: 0 30px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  position: relative;
+}
+@media (max-width: 375px) {
+  .comment ul li {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+.comment hr {
+  color: rgba(0, 0, 0, 0.0784313725);
+}
+.comment h6 {
+  padding-top: 24px;
+}
+.comment-content {
+  padding: 24px 0;
+  font-weight: normal;
+  text-align: justify;
+}
+.comment-photo {
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 32px;
+  margin-top: -56px;
+}
+.comment-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-name p {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  font-weight: normal;
+}
+
+.star {
+  padding-top: 12px;
+  padding-right: 8.22px;
+}
+
+.footer-top {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 503px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 260px;
+}
+@media (max-width: 375px) {
+  .footer-top {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg");
+    height: 461px;
+    padding-top: 293px;
+  }
+}
+.footer-top h3 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+@media (max-width: 375px) {
+  .footer-top h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.footer-top a {
+  display: block;
+  color: #FFFFFF;
+  background: #56C4C5;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  padding: 12px 32px;
+}
+.footer-top a:hover {
+  background: #F6CB52;
+  border: 1px solid #F6CB52;
+}
+
+.footer-link {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  width: 136px;
+  margin-bottom: 100px;
+}
+@media (max-width: 375px) {
+  .footer-link {
+    margin-bottom: 60px;
+  }
+}
+
+footer {
+  background: #F5F5F5;
+}
+footer p {
+  padding: 16px 0;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.5;
+}

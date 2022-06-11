@@ -1,0 +1,47 @@
+.platform{
+   background-repeat: no-repeat;
+    h3{
+       margin-top: 217px;
+       margin-bottom: 48px;
+       @media (max-width:375px) {
+             margin-top: 98.5px;
+             margin-bottom: 32px;
+             font-size: 28px;
+          }
+       }
+    h4{
+       margin: 24px 0;   
+       @media (max-width:375px) {
+          font-size: $font-s-s;
+          margin: 16px 0;
+       }
+    }    
+    ul{
+       display: flex;
+       justify-content: space-between;
+       @media (max-width:375px) {
+          flex-direction: column;
+       }
+       li {
+          width: 33.33%;
+          @media (max-width:375px) {
+             width: 100%;
+          }
+       }
+          .platform-logo{
+             width: 90px;
+             height: 90px;
+             margin: 0 auto;
+             @media (max-width:375px) {
+                width: 60px;
+                height: 60px;
+             }
+          }
+        p{
+           font-weight: normal;
+           color: #747474;
+           text-align: center;
+           padding: 0 8px 24px;
+      }
+    }     
+}

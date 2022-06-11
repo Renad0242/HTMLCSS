@@ -1,0 +1,92 @@
+.plan{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
+    background-position: 110% -50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    @media (max-width:375px) {
+        flex-direction: column-reverse;
+    }
+    &-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 55%;
+        @media (max-width:375px) {
+            width: 100%;
+            padding-left: 53px;
+        }
+        h5{
+            padding-bottom: 16px;
+        }
+        p{
+            font-weight: normal;
+        }
+        li{
+             width: 230px;
+             margin-right: 47px;
+             margin-bottom: 28px;
+             box-shadow: 0px 2px 10px #00000014;
+             border-radius: 12px;
+             padding: 32px 32px 48px 32px;
+             .top{
+                 padding: 17px;
+             }
+             .down{
+                 padding: 19px 17px;
+             }
+        }
+    }
+    &-content{
+        width: 45%;
+        @media (max-width:375px) {
+            width: 100%;
+        }
+        h3{
+            text-align: left;
+            padding-bottom: 16px;
+            @media (max-width:375px) {
+                text-align: center;
+                font-size: 28px;
+            }
+        }
+        p{
+            font-weight: normal;
+            padding-bottom: 24px;
+            @media (max-width:375px) {
+                text-align: center;
+                padding-bottom: 16px;
+            }
+        }
+        a{
+            display: block;
+            color:$link-color;
+            background:  #56C4C5;
+            border: 1px solid #56C4C5;
+            border-radius: 27px;
+            padding: 12px 32px;
+            &:hover{
+               background: #F6CB52;
+               border: 1px solid #F6CB52;
+            }
+         }
+    }
+    &-circle{
+        width: 86px;
+        height: 86px;
+        margin-bottom: 24px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 10px #00000014;
+    }
+}
+.plan-link{
+  font-family: $font-f-NS;
+  font-weight: normal;
+  text-align: center;
+  width: 136px;
+  margin-bottom: 100px;
+  @media (max-width:375px) {
+    margin-left: 100px;
+    margin-bottom: 32px;
+     }
+}

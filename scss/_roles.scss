@@ -1,0 +1,56 @@
+.roles{
+    margin-bottom: 100px;
+    text-align: center;
+    @media(max-width: 375px){
+        padding: 0 4px;
+    }
+     h3{
+         margin-top: 100px;
+         margin-bottom: 16px;
+         @media(max-width: 375px){
+             margin-top: 36px;
+             margin-bottom: 16px;
+             font-size: 28px;
+         }
+     }
+     &-p{
+         font-size: $font-s-m;
+         font-weight: normal;
+         padding-bottom: 48px;
+         @media(max-width: 375px){
+            font-size: $font-s-s;
+            padding-bottom: 32px;
+        }
+
+     }
+     &-picture{
+         border-radius: 12px 12px 0 0;
+    }
+     ul{
+         display: flex;
+         gap:16px;
+         @media(max-width:375px){
+             flex-direction: column;
+             margin-left: 38px;
+             margin-right: 37px;
+             gap:24px;
+         }
+         li{
+             width: 25%;
+             box-shadow: 0px 2px 10px #00000014; 
+             border-radius: 12px;
+             @media(max-width:375px){
+                width: 100%;
+             }
+         }
+         span{
+             display: block;
+             color: #56C4C5;
+             padding: 16px 0 16px;
+           }
+          p{
+             font-weight: normal;
+             padding:0 16px 24px;
+            }
+       }
+}

@@ -1,0 +1,45 @@
+/*{
+    outline: 0.5px dotted red;
+}*/
+*, *::before,*::after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding:0 16px;
+    line-height: 1.5;
+    font-family:$font-f-NS;
+ }
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+body{
+    color:$color;
+    font-weight: $font-w;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    @media (max-width:375px){
+        background-image:none;
+    }
+}
+h3{
+    font-size: $font-s-larger;
+}
+h4{
+    font-size: $font-s-l;
+}
+h3,h4{
+    text-align: center;
+}
+h5{
+    font-size: $font-s-s;
+}
+h6{
+    $font-w:bold;
+}
